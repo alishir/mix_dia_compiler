@@ -13,13 +13,14 @@ There are some unresolved questions:
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
 
   1. Add mix_dia_compiler to your list of dependencies in `mix.exs`:
-
+```Elixir
         def deps do
           [{:mix_dia_compiler, "~> 0.1.0"}]
         end
-
+```
   2. Add `:dia` to compilers:
-
+```Elixir
         def application do
           compilers: [:dia, :erlang, :elixir, :app],
         end
+```
